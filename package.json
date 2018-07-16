@@ -4,5 +4,8 @@
   "description": "a simple periodic table",
   "main": "index.js",
   "author": "Nafis Fuad <fuadbd14@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^2.9.2"
+  }
 }
