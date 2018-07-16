@@ -64,4 +64,4 @@ typings/
 .cache
 
 # the dist folder
-./dist/
+./dist/**/*
