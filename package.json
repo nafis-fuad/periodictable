@@ -1,0 +1,8 @@
+{
+  "name": "fuads-table",
+  "version": "1.0.0",
+  "description": "a simple periodic table",
+  "main": "index.js",
+  "author": "Nafis Fuad <fuadbd14@gmail.com>",
+  "license": "MIT"
+}
