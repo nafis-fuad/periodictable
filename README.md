@@ -1,0 +1,1 @@
+https://travis-ci.org/nafis-fuad/periodictable.svg?branch=master
