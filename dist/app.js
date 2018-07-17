@@ -10,13 +10,13 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var express_1 = __importDefault(require("express"));
-var path_1 = __importDefault(require("path"));
 var compression_1 = __importDefault(require("compression"));
 var dotenv_1 = __importDefault(require("dotenv"));
+var express_1 = __importDefault(require("express"));
+var path_1 = __importDefault(require("path"));
 dotenv_1.default.config({ path: ".env" });
-var homeController = __importStar(require("./routes/index"));
 var aboutController = __importStar(require("./routes/about"));
+var homeController = __importStar(require("./routes/index"));
 var app = express_1.default();
 app.set("port", process.env.PORT || 3000);
 app.set("views", path_1.default.join(__dirname, "../views"));
