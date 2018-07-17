@@ -2,7 +2,6 @@
   "name": "fuads-table",
   "version": "1.0.0",
   "description": "a simple periodic table",
-  
   "author": "Nafis Fuad <fuadbd14@gmail.com>",
   "license": "MIT",
   "repository": {
@@ -28,10 +27,14 @@
     "watch-debug": "concurrently -k -p \"[{name}]\" -n \"Sass,TypeScript,Node\" -c \"yellow.bold,cyan.bold,green.bold\" \"npm run watch-sass\" \"npm run watch-ts\" \"npm run serve-debug\""
   },
   "devDependencies": {
+    "@types/compression": "^0.0.36",
+    "@types/dotenv": "^4.0.3",
+    "@types/errorhandler": "^0.0.32",
     "@types/express": "^4.16.0",
     "@types/node": "^10.5.2",
     "@types/pug": "^2.0.4",
     "@types/shelljs": "^0.8.0",
+    "compression": "^1.7.3",
     "concurrently": "^3.6.0",
     "node-sass": "^4.9.2",
     "nodemon": "^1.18.2",
@@ -42,6 +45,8 @@
     "typescript": "^2.9.2"
   },
   "dependencies": {
+    "dotenv": "^6.0.0",
+    "errorhandler": "^1.5.0",
     "express": "^4.16.3",
     "periodic-table": "^0.0.8",
     "pug": "^2.0.3"
