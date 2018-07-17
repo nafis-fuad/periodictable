@@ -2,7 +2,7 @@
   "name": "fuads-table",
   "version": "1.0.0",
   "description": "a simple periodic table",
-  "main": "src/index.ts",
+  
   "author": "Nafis Fuad <fuadbd14@gmail.com>",
   "license": "MIT",
   "repository": {
@@ -31,6 +31,7 @@
     "@types/express": "^4.16.0",
     "@types/node": "^10.5.2",
     "@types/pug": "^2.0.4",
+    "@types/shelljs": "^0.8.0",
     "concurrently": "^3.6.0",
     "node-sass": "^4.9.2",
     "nodemon": "^1.18.2",
