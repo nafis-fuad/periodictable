@@ -1,9 +1,10 @@
-import express from "express";
-import path from "path";
 import compression from "compression";
 import dotenv from "dotenv";
+import express from "express";
+import path from "path";
 
-dotenv.config({path: ".env"});
+
+dotenv.config({ path: ".env" });
 
 // Controllers (route handlers)
 import * as homeController from "./routes/index";
