@@ -7,8 +7,8 @@ import path from "path";
 dotenv.config({ path: ".env" });
 
 // Controllers (route handlers)
-import * as homeController from "./routes/index";
 import * as aboutController from "./routes/about";
+import * as homeController from "./routes/index";
 
 // Create Express server
 const app = express();
