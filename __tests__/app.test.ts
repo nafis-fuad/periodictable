@@ -1,3 +1,4 @@
+// tslint:disable-next-line:no-implicit-dependencies
 import request from "supertest";
 import app from "../src/app";
 
