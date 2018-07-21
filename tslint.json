@@ -4,7 +4,7 @@
         "tslint:latest",
         "tslint-config-prettier"
     ],
-    "jsRules": {},
+    // "jsRules": {},
     "rules": {
         "class-name": true,
         "comment-format": [
