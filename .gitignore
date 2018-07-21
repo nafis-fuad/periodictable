@@ -62,3 +62,6 @@ typings/
 
 # cache created by parcel
 .cache
+
+# the dist directory
+dist
