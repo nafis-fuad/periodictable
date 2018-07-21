@@ -50,7 +50,7 @@ body {
   grid-column-start: 18; }
 
 #boron,
-#aluminium {
+#aluminum {
   grid-column-start: 13; }
 
 #cerium,
@@ -69,40 +69,10 @@ body {
   grid-row: 8 / 10;
   grid-column: 1 / 4; }
 
-.periodic-table .noble-gas {
-  background: #eada24; }
-
-.periodic-table .diatomic-nonmetal {
-  background: #eab37f; }
-
-.periodic-table .alkali {
-  background: #ebc1d9; }
-
-.periodic-table .hydrogen {
-  background: #a3c7d2; }
-
-.periodic-table .alkaline {
-  background: #c1ebc1; }
-
-.periodic-table .unknown {
-  background: #b9babc; }
-
-.periodic-table .lanthanide {
-  background: #c0eaec; }
-
-.periodic-table .actinide {
-  background: #a1d24b; }
-
-.periodic-table .metalloid {
-  background: #4bd27d; }
-
-.periodic-table .polyatomic-non-metal {
-  background: #d24b50; }
-
 @media all and (max-width: 1100px) {
   #helium,
   #boron,
-  #aluminium,
+  #aluminum,
   #cerium,
   #thorium {
     grid-column-start: auto; }
