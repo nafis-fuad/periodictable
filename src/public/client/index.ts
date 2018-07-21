@@ -1,1 +1,3 @@
-console.log("hi");
+import MicroModal from "micromodal";
+
+MicroModal.init({});
