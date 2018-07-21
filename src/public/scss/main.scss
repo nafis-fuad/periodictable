@@ -59,7 +59,7 @@ body {
 }
 
 #boron,
-#aluminium {
+#aluminum {
     grid-column-start: 13;
 }
 
@@ -83,50 +83,10 @@ body {
     grid-column: 1 / 4;
 }
 
-.periodic-table .noble-gas {
-    background: rgb(234, 218, 36);
-}
-
-.periodic-table .diatomic-nonmetal {
-    background: rgb(234, 179, 127);
-}
-
-.periodic-table .alkali {
-    background: hsl(326, 52%, 84%);
-}
-
-.periodic-table .hydrogen {
-    background: rgb(163, 199, 210);
-}
-
-.periodic-table .alkaline {
-    background: hsl(120, 52%, 84%);
-}
-
-.periodic-table .unknown {
-    background: hsl(210, 2%, 73%);
-}
-
-.periodic-table .lanthanide {
-    background: hsl(183, 54%, 84%);
-}
-
-.periodic-table .actinide {
-    background: hsl(82, 60%, 56%);
-}
-
-.periodic-table .metalloid {
-    background: hsl(142, 60%, 56%);
-}
-
-.periodic-table .polyatomic-non-metal {
-    background: hsl(358, 60%, 56%);
-}
-
 @media all and (max-width: 1100px) {
     #helium,
     #boron,
-    #aluminium,
+    #aluminum, // must be spelled as Aluminum or else won't work with the module
     #cerium,
     #thorium {
         grid-column-start: auto;
