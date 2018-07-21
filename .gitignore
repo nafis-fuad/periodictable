@@ -66,6 +66,7 @@ typings/
 
 # Ignore built ts files
 dist/**/*
+dist/**.js
 
 # Ignore output from coverage report
 coverage
