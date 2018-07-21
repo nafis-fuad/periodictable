@@ -63,5 +63,9 @@ typings/
 # cache created by parcel
 .cache
 
-# the dist directory
-dist
+
+# Ignore built ts files
+dist/**/*
+
+# Ignore output from coverage report
+coverage
