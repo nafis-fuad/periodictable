@@ -13,6 +13,6 @@ MicroModal.init({
 
 
 const button = document.getElementById("button");
-button.addEventListener("click", (event) => {
+button.addEventListener("click", () => {
     MicroModal.show("modal-2", {});
 });
