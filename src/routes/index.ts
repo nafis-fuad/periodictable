@@ -1,8 +1,8 @@
 import { Request, Response } from "express";
-import * as pt from "periodic-table";
+import * as Pt from "periodic-table";
 
 // create an array with uniquegroupblocks
-const allEelements: object[] = pt.all();
+const allEelements: object[] = Pt.all();
 const allGroupBlocks: string[] = [];
 let uniqueGroupBlocks: string[];
 const unique = (value: string, index: number, self: any[]) => {
@@ -28,7 +28,7 @@ uniqueGroupBlocks.forEach((element: any, index: any) => {
 export let index = (req: Request, res: Response) => {
     res.render("index", {
         title: "Home",
-        elements: pt.all(),
+        elements: Pt.all(),
         requiredColors,
     });
 };
