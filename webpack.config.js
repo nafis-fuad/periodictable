@@ -1,7 +1,14 @@
-const path = require('path');
+// need to use require, or else throws errors
+const path = require("path");
+const dotenv = require("dotenv");
+
+dotenv.config({ path: ".env" });
 
 module.exports = {
-    entry: './src/index.ts',
+    entry: './src/public/js/index.ts',
+    devtool: 'inline-source-map',
+    watch: true,
+    mode: process.env.MODE,
     module: {
         rules: [
             {
@@ -16,6 +23,6 @@ module.exports = {
     },
     output: {
         filename: 'bundle.js',
-        path: path.resolve(__dirname, 'dist')
+        path: path.resolve(__dirname, 'dist/public/js')
     }
 };
