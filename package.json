@@ -29,7 +29,8 @@
     "debug": "npm run build && npm run watch-debug",
     "serve-debug": "nodemon --inspect dist/server.js",
     "watch-debug": "concurrently -k -p \"[{name}]\" -n \"Sass,TypeScript,Node\" -c \"yellow.bold,cyan.bold,green.bold\" \"npm run watch-sass\" \"npm run watch-ts\" \"npm run serve-debug\"",
-    "clean-cache": "npm cache clean --force"
+    "clean-cache": "npm cache clean --force",
+    "webpack": "webpack"
   },
   "devDependencies": {
     "@types/compression": "^0.0.36",
@@ -48,6 +49,7 @@
     "shelljs": "^0.8.2",
     "supertest": "^3.1.0",
     "ts-jest": "^23.0.1",
+    "ts-loader": "^4.4.2",
     "ts-node": "^7.0.0",
     "tslint": "^5.11.0",
     "tslint-config-prettier": "^1.13.0",
