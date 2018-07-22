@@ -8,7 +8,7 @@
     "type": "git",
     "url": "https://github.com/nafis-fuad/periodictable"
   },
-  "main": "dist/index.js",
+  "private": true,
   "files": [
     "dist/index.js"
   ],
@@ -28,7 +28,8 @@
     "copy-static-assets": "ts-node copyStaticAssets.ts",
     "debug": "npm run build && npm run watch-debug",
     "serve-debug": "nodemon --inspect dist/server.js",
-    "watch-debug": "concurrently -k -p \"[{name}]\" -n \"Sass,TypeScript,Node\" -c \"yellow.bold,cyan.bold,green.bold\" \"npm run watch-sass\" \"npm run watch-ts\" \"npm run serve-debug\""
+    "watch-debug": "concurrently -k -p \"[{name}]\" -n \"Sass,TypeScript,Node\" -c \"yellow.bold,cyan.bold,green.bold\" \"npm run watch-sass\" \"npm run watch-ts\" \"npm run serve-debug\"",
+    "clean-cache": "npm cache clean --force"
   },
   "devDependencies": {
     "@types/compression": "^0.0.36",
@@ -50,7 +51,9 @@
     "ts-node": "^7.0.0",
     "tslint": "^5.11.0",
     "tslint-config-prettier": "^1.13.0",
-    "typescript": "^2.9.2"
+    "typescript": "^2.9.2",
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.1.0"
   },
   "dependencies": {
     "compression": "^1.7.3",
