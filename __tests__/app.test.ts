@@ -7,5 +7,5 @@ describe("GET /random-url", () => {
         request(app)
             .get("/random-url")
             .expect(404, done);
-    })
+    });
 });
