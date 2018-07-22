@@ -1,0 +1,25 @@
+extends layout
+
+block content
+    button#button click me
+
+    #modal-2.modal.micromodal-slide(aria-hidden='true')
+        .modal__overlay(tabindex='-1', data-custom-close='')
+            .modal__container.w-90.w-40-ns(role='dialog', aria-modal='true', aria-labelledby='modal-2-title')
+                header.modal__header
+                    h3#modal-2-title.modal__title
+                        | 🔒 Login
+                    button.modal__close(aria-label='Close modal', data-custom-close='')
+                form.black-80(action='/')
+                    #modal-2-content.modal__content
+                        .measure
+                            label.f6.b.db.mb2.js-name(for='name') Name
+                            input#name.input-reset.ba.b--black-20.pa2.mb2.db.w-100.js-nameInput(type='text')
+                            label.f6.b.db.mb2.mt3(for='password')
+                                | Password 
+                                span.normal.black-60 (required)
+                            input#password.input-reset.ba.b--black-20.pa2.mb2.db.w-100(type='password', required='')
+                            small#name-desc.f6.black-60.db.mb2 Must be atleast 6 characters long.
+                    footer.modal__footer
+                        input.modal__btn.modal__btn-primary(type='submit', value='Login')
+                        a.f6.ml2.dark-blue.no-underline.underline-hover.js-modal-close-trigger(href='#', aria-label='Close this dialog window') Cancel
