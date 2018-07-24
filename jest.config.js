@@ -1,4 +1,5 @@
 module.exports = {
+	verbose: true,
 	globals: {
 		'ts-jest': {
 			tsConfigFile: 'tsconfig.json'
@@ -15,4 +16,7 @@ module.exports = {
 		'**/__tests__/**/*.test.(ts|js)'
 	],
 	testEnvironment: 'node',
+	"transformIgnorePatterns": [
+		"node_modules/(?!(react-native|my-project|redux-persist)/)"
+	]
 };
