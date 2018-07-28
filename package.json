@@ -14,7 +14,7 @@
   ],
   "scripts": {
     "start": "npm run serve",
-    "build": "npm run clean:cache && npm run clean:build && npm run build-sass && npm run build-ts && npm run tslint && npm run copy-static-assets && webpack",
+    "build": "npm run clean:cache && npm run clean:dist && npm run build-sass && npm run build-ts && npm run tslint && npm run copy-static-assets && webpack",
     "serve": "node dist/server.js",
     "watch-node": "nodemon dist/server.js",
     "watch": "concurrently -k -p \"[{name}]\" -n \"Sass,TypeScript,Node\" -c \"yellow.bold,cyan.bold,green.bold\" \"npm run watch-sass\" \"npm run watch-ts\" \"npm run watch-node\" \"webpack\"",
@@ -30,7 +30,7 @@
     "serve-debug": "nodemon --inspect dist/server.js",
     "watch-debug": "concurrently -k -p \"[{name}]\" -n \"Sass,TypeScript,Node\" -c \"yellow.bold,cyan.bold,green.bold\" \"npm run watch-sass\" \"npm run watch-ts\" \"npm run serve-debug\"",
     "clean:cache": "npm cache clean --force",
-    "clean:build": "rimraf dist",
+    "clean:dist": "rimraf dist",
     "coverage": "jest --coverage",
     "test:watch": "jest -o --watch",
     "typecheck": "tsc"
