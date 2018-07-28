@@ -1,10 +1,13 @@
 {
     "compilerOptions": {
         "esModuleInterop": true,
-        // "module": "es6",
-        "target": "es5",
+        "module": "commonjs",
+        "target": "esnext",
         "noImplicitAny": true,
         "moduleResolution": "node",
+        // "noEmit": true,
+        "strict": true,
+        "allowSyntheticDefaultImports": true,
         "sourceMap": true,
         "outDir": "dist",
         "baseUrl": ".",
@@ -22,5 +25,5 @@
         "es2016",
         "dom",
         "es5"
-    ]
+    ],
 }

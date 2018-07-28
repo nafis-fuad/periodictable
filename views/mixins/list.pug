@@ -1,3 +1,3 @@
-mixin list(elem, backgroundColor)
-    li(id=elem.name.toLowerCase(), class=elem.name.toLowerCase(), class=elem.groupBlock.toLowerCase(), style=`background-color: ${backgroundColor}`)
+mixin list(elem, index, backgroundColor)
+    li(id=elem.name.toLowerCase(), class=elem.name.toLowerCase(), class=elem.groupBlock.toLowerCase(), style=`background-color: ${backgroundColor}` data-custom-open=`modal-${index}` role="button")
         abbr(title=elem.name.toLowerCase())= elem.symbol

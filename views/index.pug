@@ -1,7 +1,7 @@
 extends layout
 
 block content
-    include mixins/list.pug
+    include mixins/list
     ol.periodic-table
         each elem, index in elements
-            +list(elem, requiredColors[elem.groupBlock])
+            +list(elem, index, requiredColors[elem.groupBlock])

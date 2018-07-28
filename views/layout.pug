@@ -17,7 +17,10 @@ html(lang='en')
 			block content
 
 		include includes/footer
+		include mixins/modal
 
-		//- script var exports = {};
-		script( type="module" src='/js/bundle.js')
+		each elem,index in elements
+			+modal(index, elem.name, elem.electronicConfiguration)
 
+		script var exports = {};
+		script( type="module" src='/js/index.js')

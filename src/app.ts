@@ -9,6 +9,7 @@ dotenv.config({ path: ".env" });
 // Controllers (route handlers)
 import * as aboutController from "./routes/about";
 import * as homeController from "./routes/index";
+import * as experimentController from "./routes/experiments";
 
 // Create Express server
 const app = express();
@@ -28,5 +29,6 @@ app.use(
  */
 app.get("/", homeController.index);
 app.get("/about", aboutController.about);
+app.get("/experiment", experimentController.experiment);
 
 export default app;

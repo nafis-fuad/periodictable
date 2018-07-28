@@ -5,14 +5,8 @@ MicroModal.init({
     onClose: (modal: any) => console.info(`${modal.id} is hidden`),
     openTrigger: "data-custom-open",
     closeTrigger: "data-custom-close",
-    disableScroll: true,
+    disableScroll: false,
     disableFocus: false,
     awaitCloseAnimation: true,
     debugMode: true
-});
-
-
-const button = document.getElementById("button");
-button.addEventListener("click", () => {
-    MicroModal.show("modal-2", {});
 });
