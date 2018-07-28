@@ -9,20 +9,26 @@ module.exports = {
   devtool: 'inline-source-map',
   watch: true,
   mode: process.env.MODE,
+  // Add the loader for .ts files.
   module: {
     rules: [
       {
         test: /\.tsx?$/,
-        use: 'ts-loader',
+        loader: 'awesome-typescript-loader',
         exclude: /node_modules/,
+      },
+      {
+        test: /\.js$/,
+        loader: 'source-map-loader',
+        enforce: 'pre',
       },
     ],
   },
   resolve: {
-    extensions: ['.tsx', '.ts', '.js'],
+    extensions: ['.ts', '.tsx', '.js', '.jsx'],
   },
   output: {
-    filename: '[name].js',
-    path: path.resolve (__dirname, 'dist/public/js'),
+    filename: 'index.js',
+    path: path.join (__dirname, './dist/public/js'),
   },
 };

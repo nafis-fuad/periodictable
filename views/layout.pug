@@ -17,7 +17,9 @@ html(lang='en')
 			block content
 
 		include includes/footer
+		include mixins/modal
 
-		//- script var exports = {};
+		each elem,index in elements
+			+modal(index, elem.name, elem.electronicConfiguration)
+
 		script( type="module" src='/js/index.js')
-

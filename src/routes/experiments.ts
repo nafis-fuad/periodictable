@@ -22,12 +22,12 @@ uniqueGroupBlocks.forEach((element: any, index: any) => {
 });
 
 /**
- * GET /
+ * GET /experiment
  * Home PAGE.
  */
-export let index = (req: Request, res: Response) => {
+export let experiment = (req: Request, res: Response) => {
     res.render("experiment", {
-        title: "Home",
+        title: "experiment",
         elements: Pt.all(),
         requiredColors,
     });
