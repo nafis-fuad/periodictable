@@ -20,6 +20,10 @@
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
 
+"@csstools/normalize.css@^8.0.0":
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/@csstools/normalize.css/-/normalize.css-8.0.0.tgz#28be09fb27532de6e7b7f0967fd174da29674552"
+
 "@types/babel-types@*", "@types/babel-types@^7.0.0":
   version "7.0.4"
   resolved "https://registry.yarnpkg.com/@types/babel-types/-/babel-types-7.0.4.tgz#bfd5b0d0d1ba13e351dff65b6e52783b816826c8"
@@ -4572,6 +4576,12 @@ postcss-attribute-case-insensitive@^3.0.1:
     postcss "^6.0.23"
     postcss-selector-parser "^4.0.0"
 
+postcss-browser-comments@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/postcss-browser-comments/-/postcss-browser-comments-1.0.0.tgz#1189a566f8705369e32e30738d1534085bb8260e"
+  dependencies:
+    postcss "^6.0.22"
+
 postcss-color-functional-notation@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/postcss-color-functional-notation/-/postcss-color-functional-notation-1.0.2.tgz#836fbc5e88a4ebd958ba6a3f9e2dad7792166c9f"
@@ -4761,6 +4771,15 @@ postcss-nesting@^6.0.0:
   resolved "https://registry.yarnpkg.com/postcss-nesting/-/postcss-nesting-6.0.0.tgz#4c45276a065765ec063efe1e4daf75c131518991"
   dependencies:
     postcss "^6.0.22"
+
+postcss-normalize@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/postcss-normalize/-/postcss-normalize-6.0.0.tgz#6441b3ced4578f7b7c3b1529a43d1d0ef466996f"
+  dependencies:
+    "@csstools/normalize.css" "^8.0.0"
+    browserslist "^3.2.8"
+    postcss "^6.0.22"
+    postcss-browser-comments "^1.0.0"
 
 postcss-overflow-shorthand@^1.0.1:
   version "1.0.1"

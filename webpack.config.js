@@ -2,6 +2,7 @@
 const path = require ('path');
 const dotenv = require ('dotenv');
 const postcssPresetEnv = require ('postcss-preset-env');
+const postcssNormalize = require ('postcss-normalize');
 
 dotenv.config ({path: '.env'});
 
@@ -39,7 +40,10 @@ module.exports = {
           {
             loader: 'postcss-loader',
             options: {
-              plugins: () => [postcssPresetEnv (/* options */)],
+              plugins: () => [
+                postcssPresetEnv (/* options */),
+                postcssNormalize (/* pluginOptions */),
+              ],
             },
           },
         ],
