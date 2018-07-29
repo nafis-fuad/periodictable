@@ -28,7 +28,10 @@
     "clean:cache": "npm cache clean --force",
     "clean:dist": "rimraf dist",
     "coverage": "jest --coverage",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "test": "jest",
+    "watch-test": "npm run test -- --watchAll",
+    "jest:watch": "jest -o --watch"
   },
   "devDependencies": {
     "@types/compression": "^0.0.36",
