@@ -7,7 +7,7 @@ dotenv.config ({path: '.env'});
 module.exports = {
   entry: './src/public/js/index.ts',
   devtool: 'inline-source-map',
-  watch: true,
+  // watch: true,
   mode: process.env.MODE,
   // Add the loader for .ts files.
   module: {
