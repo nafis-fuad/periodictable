@@ -1,23 +1,25 @@
 extends layout
 
+include mixins/tooltip
 block content
     button#button(data-custom-open="modal-1" role="button") click me
     button#button(data-custom-open="modal-2" role="button") click me
     button#button(data-custom-open="modal-3" role="button") click me
     button#button(data-custom-open="modal-4" role="button") click me
     
-    //- div#modal-1(class="modal micromodal-slide" aria-hidden="true")
-    //-     div(class="modal__overlay" tabindex="-1" data-micromodal-close)
-    //-         div( class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title")
-    //-             div(class="modal__header")
-    //-                 h2( class="modal__title" id="modal-1-title")
-    //-                 | Micromodal 🔥                
-    //-                 button(class="modal__close" aria-label="Close modal" data-micromodal-close)
-    //-             div(class="modal__content" id="modal-1-content")
-    //-             p This is a completely accessible modal.
-    //-                 | Try hitting the <code>tab</code> key* and notice how the focus stays within the modal itself. To close modal hit the <code>esc</code> button, click on the overlay or just click the close button.         
-                
-    //-             footer(class="modal__footer")
-    //-                 button(class="modal__btn modal__btn-primary") Continue
-    //-                 button(class="modal__btn" data-custom-close="modal-1" aria-label="Close this dialog window") Close
+    ul.nav
+        li.nav__item
+            a( href="javascript:;" class="nav__link outline" role="tooltip" aria-label="Its me. I am a leftist. Get it?" data-microtip-position="top-left") Top Left
+        li.nav__item
+            a( href="javascript:;" class="nav__link outline" role="tooltip" aria-label="I continue in single line unless you specify a size" data-microtip-position="top") Top
+        li.nav__item
+            a( href="javascript:;" class="nav__link outline" role="tooltip" aria-label="Emoji? No problem 😎" data-microtip-position="top-right") Top Right
+
+    ol
+        +tooltip("li","HI, i'm doing great", "top", "large", "its a good tooltip")    
+        +tooltip("li","HI, i'm doing great", "bottom-left", "large", "its a good tooltip")    
+        +tooltip("li","HI, i'm doing great", "bottom-right", "large", "its a good tooltip")    
+        +tooltip("li","HI, i'm doing great", "top-left", "large", "its a good tooltip")    
+        +tooltip("li","HI, i'm doing great", "top-right", "large", "its a good tooltip")    
+        +tooltip("li","HI, i'm doing great, and yea, I'm doing pretty darn great. As great as a man and every ado in his  aisdfver ladilf eyou know??", "bottom", "large", "its a good tooltip")    
 

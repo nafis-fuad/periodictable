@@ -1,3 +1,5 @@
+include tooltip
+
 mixin list(elem, index, backgroundColor)
     li(id=elem.name.toLowerCase(), class=elem.name.toLowerCase(), class=elem.groupBlock.toLowerCase(), style=`background-color: ${backgroundColor}` data-custom-open=`modal-${index}` role="button")
-        abbr(title=elem.name.toLowerCase())= elem.symbol
+        +tooltip("abbr", elem.name.toLowerCase(), elem.symbol, `${elem.name} ${elem.symbol} ${elem.groupBlock}`, "bottom", "large")
