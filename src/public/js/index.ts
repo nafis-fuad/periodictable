@@ -1,3 +1,4 @@
+// import "../scss/main.scss";
 import MicroModal from "micromodal";
 
 MicroModal.init({
