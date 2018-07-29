@@ -1,0 +1,11 @@
+@import 'microtip.css';
+@import "modal.css";
+@import "periodic-table.css";
+:root {
+    --microtip-transition-duration: 0.5s;
+    --microtip-transition-delay: 1s;
+    --microtip-transition-easing: ease-out;
+    --microtip-font-size: 20px;
+    --microtip-font-weight: bold;
+    --microtip-text-transform: uppercase;
+}

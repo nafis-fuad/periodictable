@@ -1,6 +1,7 @@
 // need to use require, or else throws errors
 const path = require ('path');
 const dotenv = require ('dotenv');
+const postcssPresetEnv = require ('postcss-preset-env');
 
 dotenv.config ({path: '.env'});
 
@@ -37,27 +38,9 @@ module.exports = {
           },
           {
             loader: 'postcss-loader',
-          },
-        ],
-      },
-      {
-        test: /\.scss$/,
-        exclude: /node_modules/,
-        use: [
-          {
-            loader: 'style-loader',
-          },
-          {
-            loader: 'css-loader',
             options: {
-              importLoaders: 1,
+              plugins: () => [postcssPresetEnv (/* options */)],
             },
-          },
-          {
-            loader: 'postcss-loader',
-          },
-          {
-            loader: 'sass-loader',
           },
         ],
       },

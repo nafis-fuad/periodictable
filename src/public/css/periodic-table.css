@@ -16,8 +16,8 @@
 
 body {
     font-family: Phenomena, script;
-    margin: 5vw; // background: #111;
-    // color: #000;
+    margin: 5vw;
+    color: #000;
     color: blue;
     counter-reset: element;
 }
@@ -86,7 +86,8 @@ body {
 @media all and (max-width: 1100px) {
     #helium,
     #boron,
-    #aluminum, // must be spelled as Aluminum or else won't work with the module
+    #aluminum,
+    /* must be spelled as aluminum or else won't work with the module */
     #cerium,
     #thorium {
         grid-column-start: auto;

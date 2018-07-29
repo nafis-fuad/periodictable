@@ -1,4 +1,5 @@
-// import "../scss/main.scss";
+// import "microtip";
+import "../css/main.css";
 import MicroModal from "micromodal";
 
 MicroModal.init({
