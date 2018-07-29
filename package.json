@@ -18,8 +18,6 @@
     "watch": "concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"yellow.bold,cyan.bold,green.bold\" \"npm run watch-ts\" \"npm run watch-node\" \"webpack --watch\"",
     "serve": "node dist/server.js",
     "watch-node": "nodemon dist/server.js",
-    "test": "jest",
-    "watch-test": "npm run test -- --watchAll",
     "build-ts": "tsc",
     "watch-ts": "tsc -w",
     "tslint": "tslint -c tslint.json -p tsconfig.json",
@@ -30,7 +28,6 @@
     "clean:cache": "npm cache clean --force",
     "clean:dist": "rimraf dist",
     "coverage": "jest --coverage",
-    "test:watch": "jest -o --watch",
     "typecheck": "tsc"
   },
   "devDependencies": {
