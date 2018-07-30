@@ -6,7 +6,6 @@
         "target": "esnext",
         "noImplicitAny": true,
         "moduleResolution": "node",
-        // "noEmit": true,
         "strict": true,
         "allowSyntheticDefaultImports": true,
         "sourceMap": true,
