@@ -1,24 +1,5 @@
-@font-face {
-    font-family: Phenomena;
-    src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/Phenomena-Regular.otf);
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: Phenomena;
-    src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/Phenomena-Bold.otf);
-    font-weight: bold;
-}
-
-* {
-    box-sizing: border-box;
-}
-
 body {
-    font-family: Phenomena, script;
     margin: 5vw;
-    color: #000;
-    color: blue;
     counter-reset: element;
 }
 
@@ -94,9 +75,6 @@ body {
     }
     .periodic-table {
         grid-template-columns: 1fr 1fr 1fr;
-    }
-    .periodic-table>li abbr {
-        font-size: 0;
     }
     .periodic-table>li {
         padding: 1rem;
