@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /**
- * GET /
+ * GET /about
  * ABOUT PAGE
  */
 exports.about = (req, res) => {

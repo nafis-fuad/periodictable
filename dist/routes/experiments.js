@@ -27,7 +27,7 @@ uniqueGroupBlocks.forEach((element, index) => {
 });
 /**
  * GET /experiment
- * Home PAGE.
+ * Experiment PAGE.
  */
 exports.experiment = (req, res) => {
     res.render("experiment", {
