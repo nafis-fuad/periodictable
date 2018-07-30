@@ -23,7 +23,7 @@ uniqueGroupBlocks.forEach((element: any, index: any) => {
 
 /**
  * GET /experiment
- * Home PAGE.
+ * Experiment PAGE.
  */
 export let experiment = (req: Request, res: Response) => {
     res.render("experiment", {

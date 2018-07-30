@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 
 /**
- * GET /
+ * GET /about
  * ABOUT PAGE
  */
 export let about = (req: Request, res: Response) => {
