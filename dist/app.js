@@ -14,6 +14,7 @@ const compression_1 = __importDefault(require("compression"));
 const dotenv_1 = __importDefault(require("dotenv"));
 const express_1 = __importDefault(require("express"));
 const path_1 = __importDefault(require("path"));
+const helmet_1 = __importDefault(require("helmet"));
 dotenv_1.default.config({ path: ".env" });
 // Controllers (route handlers)
 const aboutController = __importStar(require("./routes/about"));
@@ -21,12 +22,15 @@ const homeController = __importStar(require("./routes/index"));
 const experimentController = __importStar(require("./routes/experiments"));
 // Create Express server
 const app = express_1.default();
+app.use(helmet_1.default());
 // Express configuration
 app.set("port", process.env.PORT || 3000);
 app.set("views", path_1.default.join(__dirname, "../views"));
 app.set("view engine", "pug");
 app.use(compression_1.default());
-app.use(express_1.default.static(path_1.default.join(__dirname, "public"), { maxAge: 31557600000 }));
+app.use(
+// express.static(path.join(__dirname, "public"), { maxAge: 31557600000 })
+express_1.default.static(path_1.default.join(__dirname, "public"), { maxAge: 0 }));
 /**
  * Primary app routes.
  */

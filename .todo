@@ -1,2 +1,10 @@
 TODO: create a custom npm package on the periodic table
-TODO: somehow, only upload the dist to heroku
+TODO: add google analytics
+TODO: add a decent font 
+TODO: Update the style of the table
+TODO: Add copyright and footer
+TODO: Populate the modal with info
+TODO: Add favicon
+TODO: Make it a PWA
+TODO: make the current index a periodic table solely...
+TODO: add a new index.pug and write some amazing stuff there.

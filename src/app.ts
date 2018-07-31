@@ -2,6 +2,7 @@ import compression from "compression";
 import dotenv from "dotenv";
 import express from "express";
 import path from "path";
+import helmet from "helmet";
 
 dotenv.config({ path: ".env" });
 
@@ -12,6 +13,8 @@ import * as experimentController from "./routes/experiments";
 
 // Create Express server
 const app = express();
+
+app.use(helmet());
 
 // Express configuration
 app.set("port", process.env.PORT || 3000);
