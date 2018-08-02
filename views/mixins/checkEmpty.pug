@@ -1,0 +1,5 @@
+mixin isEmpty(index, str)
+    if (!str || 0 === str.length)
+        null
+    else 
+        p #{index.replace(/([a-z](?=[A-Z]))/g, '$1 ').toUpperCase()} : #{str}

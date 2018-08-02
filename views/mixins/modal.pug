@@ -1,3 +1,5 @@
+include checkEmpty
+
 mixin modal(elem, id)
     div(class="modal micromodal-slide" id=`modal-${id}` aria-hidden="true")
         div(class="modal__overlay" tabindex="-1" data-custom-close=`modal-${id}`)
@@ -8,7 +10,8 @@ mixin modal(elem, id)
                     button(class="modal__close" aria-label="Close modal" data-custom-close=`modal-${id}`)
                 div(class="modal__content" id=`modal-${id}-content`)
                     each val, index in elem
-                        p #{index.replace(/([a-z](?=[A-Z]))/g, '$1 ').toUpperCase()} :  #{val}
+                        //- p #{index.replace(/([a-z](?=[A-Z]))/g, '$1 ').toUpperCase()} :  
+                        +isEmpty(index, val)
                 footer(class="modal__footer")
                     button(class="modal__btn modal__btn-primary") Continue
                     button(class="modal__btn" data-custom-close=`modal-${id}` aria-label="Close this dialog window") Close

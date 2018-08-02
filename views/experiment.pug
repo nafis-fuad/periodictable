@@ -1,6 +1,8 @@
 extends layout
 
 include mixins/tooltip
+include mixins/checkEmpty
+
 block content
     button#button(data-custom-open="modal-1" role="button") click me
     button#button(data-custom-open="modal-2" role="button") click me
@@ -23,3 +25,4 @@ block content
         +tooltip("li","HI, i'm doing great", "top-right", "large", "its a good tooltip")    
         +tooltip("li","HI, i'm doing great, and yea, I'm doing pretty darn great. As great as a man and every ado in his  aisdfver ladilf eyou know??", "bottom", "large", "its a good tooltip")    
 
+    +isEmpty(" ")
