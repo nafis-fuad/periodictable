@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    include mixins/list
+    include mixins/modal
+    ol.periodic-table
+        each elem, index in elements
+            +list(elem, index, requiredColors[elem.groupBlock])
+
+    each elem, index in elements
+        //- +modal(index, elem.name, elem.electronicConfiguration)
+        +modal(elem, index)
