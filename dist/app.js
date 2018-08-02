@@ -19,6 +19,7 @@ dotenv_1.default.config({ path: ".env" });
 // Controllers (route handlers)
 const aboutController = __importStar(require("./routes/about"));
 const homeController = __importStar(require("./routes/index"));
+const periodicTableController = __importStar(require("./routes/periodicTable"));
 const experimentController = __importStar(require("./routes/experiments"));
 // Create Express server
 const app = express_1.default();
@@ -36,6 +37,7 @@ express_1.default.static(path_1.default.join(__dirname, "public"), { maxAge: 0 }
  */
 app.get("/", homeController.index);
 app.get("/about", aboutController.about);
+app.get("/periodicTable", periodicTableController.periodicTable);
 app.get("/experiment", experimentController.experiment);
 exports.default = app;
 //# sourceMappingURL=app.js.map
