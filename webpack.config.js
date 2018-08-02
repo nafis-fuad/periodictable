@@ -7,7 +7,7 @@ const postcssNormalize = require ('postcss-normalize');
 dotenv.config ({path: '.env'});
 
 module.exports = {
-  entry: './src/public/js/index.ts',
+  entry: './src/public/client/index.ts',
   devtool: 'inline-source-map',
   mode: process.env.MODE,
   module: {
@@ -53,6 +53,6 @@ module.exports = {
   },
   output: {
     filename: 'index.js',
-    path: path.join (__dirname, './dist/public/js'),
+    path: path.join (__dirname, './dist/public/client'),
   },
 };
