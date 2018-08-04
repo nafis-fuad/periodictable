@@ -1,4 +1,7 @@
-@import "microtip.css";
-@import "modal.css";
+/* @import "microtip.css"; */
+
+/* @import "modal.css"; */
+
 @import "periodic-table.css";
+@import "../lib/materialize/css/materialize.css";
 @import "custom.css";

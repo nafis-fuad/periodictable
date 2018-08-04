@@ -10,7 +10,8 @@
 body {
     /* background: red; */
     overflow-x: hidden;
-    color: black
+    color: black;
+    font-family: 'Roboto', sans-serif;
 }
 
 .modal__header {

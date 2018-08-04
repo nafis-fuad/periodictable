@@ -1,4 +1,20 @@
-p this is the header: 
-a(href="/") go to home 
-a(href="/periodicTable") go to the Periodic Table 
-a(href="/about") go to about
+nav
+	.nav-wrapper
+		//- a.brand-logo(href='#!') Logo
+		a.sidenav-trigger(href='#', data-target='mobile-demo')
+			i.material-icons menu
+		ul.right.hide-on-med-and-down
+			li
+				a(href='/') Home
+			li
+				a(href='/periodicTable') Periodic Table
+			li
+				a(href='/about') About
+
+ul#mobile-demo.sidenav
+	li
+		a(href='/') Home
+	li
+		a(href='/periodicTable') Periodic Table
+	li
+		a(href='/about') About
