@@ -1,17 +1,14 @@
-include checkEmpty
+include displayValidProperties
 
 mixin modal(elem, id)
-    div(class="modal micromodal-slide" id=`modal-${id}` aria-hidden="true")
-        div(class="modal__overlay" tabindex="-1" data-custom-close=`modal-${id}`)
-            div( class="modal__container" role="dialog" aria-modal="true" aria-labelledby=`modal-${id}-title`)
-                div(class="modal__header")
-                    h2( class="modal__title" id=`modal-${id}-title`)
-                    | #{elem.name} 🔥                
-                    button(class="modal__close" aria-label="Close modal" data-custom-close=`modal-${id}`)
-                div(class="modal__content" id=`modal-${id}-content`)
-                    each val, index in elem
-                        //- p #{index.replace(/([a-z](?=[A-Z]))/g, '$1 ').toUpperCase()} :  
-                        +isEmpty(index, val)
-                footer(class="modal__footer")
-                    button(class="modal__btn modal__btn-primary") Continue
-                    button(class="modal__btn" data-custom-close=`modal-${id}` aria-label="Close this dialog window") Close
+    .modal.modal-fixed-footer(id=`modal-${id}`)
+        .modal-content
+            h4 #{elem.name}
+            each val, index in elem
+                //- p #{index.replace(/([a-z](?=[A-Z]))/g, '$1 ').toUpperCase()} :  
+                +displayValidProperties(index, val)
+        .modal-footer
+            a.modal-close.waves-effect.waves-green.btn-flat(href='#!') Close
+
+
+//- rest: follow this doc: https://materializecss.com/modals.html#!

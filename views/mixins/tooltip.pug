@@ -1,2 +1,2 @@
-mixin tooltip(elem, title, displaytext, aria_label, position, size)
-    #{elem}(aria-label=`${aria_label}` data-microtip-position=`${position}` data-microtip-size=`${size}` role="tooltip") #{displaytext}
+mixin tooltip(elem, title, displaytext, aria_label, position)
+    #{elem}(class="tooltipped" aria-label=`${aria_label}` data-microtip-position=`${position}` data-tooltip=`${title}`) #{displaytext}
