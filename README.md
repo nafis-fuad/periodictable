@@ -10,3 +10,8 @@
 Please Read the CONTRIBUTING.md for further guidelines on how to collaborate. Open an issue, or send a PR for new Features.
 
 [TODO: Add CONTRIBUTING.md]
+
+
+# About the Project
+
+This is a simple periodic table web app. Very simple, and minimal. It still has a long way to go. I intend to make this a platform for learning chemistry.
