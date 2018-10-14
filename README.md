@@ -6,3 +6,7 @@
 
 
 # Announcement: Looking for maintainers, and collaborators.
+
+Please Read the CONTRIBUTING.md for further guidelines on how to collaborate. Open an issue, or send a PR for new Features.
+
+[TODO: Add CONTRIBUTING.md]
