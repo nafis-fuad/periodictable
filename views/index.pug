@@ -1,4 +1,11 @@
 extends layout
 
 block content
-    h1 HI HOW ARE YOU DOINg?
+    include mixins/list
+    include mixins/modal
+    ol.periodic-table
+        each elem, index in elements
+            +list(elem, index, requiredColors[elem.groupBlock])
+
+    each elem, index in elements
+        +modal(elem, index)
