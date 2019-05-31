@@ -1,121 +1,122 @@
 body {
-    margin: 5vw;
-    counter-reset: element;
+	margin: 5vw;
+	counter-reset: element;
 }
 
 .periodic-table {
-    display: grid;
-    grid-column-gap: .5vw;
-    grid-row-gap: .5vw;
-    padding-left: 0;
+	display: grid;
+	grid-column-gap: 0.5vw;
+	grid-row-gap: 0.5vw;
+	padding-left: 0;
 }
 
-.periodic-table>li {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    height: 4.5vw;
-    border-radius: 3px;
-    background: rgb(91, 194, 234);
-    font-weight: bold;
+.periodic-table > li {
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	height: 4.5vw;
+	border-radius: 3px;
+	background: rgb(91, 194, 234);
+	font-weight: bold;
+	cursor: pointer;
 }
 
-.periodic-table>li:before {
-    counter-increment: element;
-    content: counter(element);
-    position: absolute;
-    bottom: 5px;
-    font-size: .9vw;
-    font-weight: lighter;
+.periodic-table > li:before {
+	counter-increment: element;
+	content: counter(element);
+	position: absolute;
+	bottom: 5px;
+	font-size: 0.9vw;
+	font-weight: lighter;
 }
 
-.periodic-table>li abbr {
-    font-size: 3.5vh;
+.periodic-table > li abbr {
+	font-size: 3.5vh;
 }
 
 #helium {
-    grid-column-start: 18;
+	grid-column-start: 18;
 }
 
 #boron,
 #aluminum {
-    grid-column-start: 13;
+	grid-column-start: 13;
 }
 
 #cerium,
 #thorium {
-    grid-column-start: 4;
+	grid-column-start: 4;
 }
 
-.periodic-table>li:nth-child(n+58):nth-last-child(n+48) {
-    grid-row-start: 8;
+.periodic-table > li:nth-child(n + 58):nth-last-child(n + 48) {
+	grid-row-start: 8;
 }
 
-.periodic-table>li:nth-child(n+90):nth-last-child(n+16) {
-    grid-row-start: 9;
+.periodic-table > li:nth-child(n + 90):nth-last-child(n + 16) {
+	grid-row-start: 9;
 }
 
 .periodic-table:before {
-    display: block;
-    content: '';
-    grid-row: 8 / 10;
-    grid-column: 1 / 4;
+	display: block;
+	content: '';
+	grid-row: 8 / 10;
+	grid-column: 1 / 4;
 }
 
 @media all and (max-width: 1100px) {
-    #helium,
+	#helium,
     #boron,
     #aluminum,
     /* must be spelled as aluminum or else won't work with the module */
     #cerium,
     #thorium {
-        grid-column-start: auto;
-    }
-    .periodic-table {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    .periodic-table>li {
-        padding: 1rem;
-    }
-    .periodic-table>li abbr {
-        font-size: 4.5vh;
-    }
-    .periodic-table>li abbr:after {
-        content: attr(title);
-        font-size: 2rem;
-    }
-    .periodic-table>li:before {
-        font-size: 1rem;
-        bottom: 5px;
-        left: 10px;
-    }
-    .periodic-table>li:nth-child(n+58):nth-last-child(n+48) {
-        grid-row-start: auto !important;
-    }
-    .periodic-table>li:nth-child(n+90):nth-last-child(n+16) {
-        grid-row-start: auto !important;
-    }
-    .periodic-table:before {
-        display: none !important;
-    }
+		grid-column-start: auto;
+	}
+	.periodic-table {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	.periodic-table > li {
+		padding: 1rem;
+	}
+	.periodic-table > li abbr {
+		font-size: 4.5vh;
+	}
+	.periodic-table > li abbr:after {
+		content: attr(title);
+		font-size: 2rem;
+	}
+	.periodic-table > li:before {
+		font-size: 1rem;
+		bottom: 5px;
+		left: 10px;
+	}
+	.periodic-table > li:nth-child(n + 58):nth-last-child(n + 48) {
+		grid-row-start: auto !important;
+	}
+	.periodic-table > li:nth-child(n + 90):nth-last-child(n + 16) {
+		grid-row-start: auto !important;
+	}
+	.periodic-table:before {
+		display: none !important;
+	}
 }
 
 @media all and (max-width: 750px) {
-    body {
-        margin: 2vw;
-    }
-    .periodic-table {
-        grid-template-columns: 1fr 1fr;
-    }
-    .periodic-table>li {
-        height: auto;
-        font-size: 3vw;
-    }
+	body {
+		margin: 2vw;
+	}
+	.periodic-table {
+		grid-template-columns: 1fr 1fr;
+	}
+	.periodic-table > li {
+		height: auto;
+		font-size: 3vw;
+	}
 }
 
 @media all and (max-width: 550px) {
-    .periodic-table {
-        grid-template-columns: 1fr;
-    }
+	.periodic-table {
+		grid-template-columns: 1fr;
+	}
 }
