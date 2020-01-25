@@ -37,5 +37,3 @@ If you want to take a look the code, or just want to developo further on your ow
 ### LICENSE
 
 [MIT](./LICENSE)
-
-**NOTE:** _The dependencies are out of date..._
