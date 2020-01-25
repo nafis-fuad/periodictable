@@ -1,11 +1,5 @@
 # PERIODIC TABLE
 
-[![Dependency Status](https://david-dm.org/nafis-fuad/periodictable.svg)](https://david-dm.org/nafis-fuad/periodictable)
-
-[![devDependencies Status](https://david-dm.org/nafis-fuad/periodictable/dev-status.svg)](https://david-dm.org/nafis-fuad/periodictable?type=dev)
-
-[![Build Status](https://travis-ci.org/nafis-fuad/periodictable.svg?branch=master)](https://travis-ci.org/nafis-fuad/periodictable)
-
 A simple periodic table web app. Built to practice Typescript, webpack, babel,etc. Now the devdependencies have changed so drastically, that things might not work as expected. [view live site here](https://chemicool.herokuapp.com)
 
 [![periodic table demo](./demo/demo-1.png)](https://chemicool.herokuapp.com)
