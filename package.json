@@ -74,7 +74,7 @@
 		"dotenv": "^6.0.0",
 		"express": "^4.16.3",
 		"helmet": "^3.13.0",
-		"materialize-css": "^1.0.0-rc.2",
+		"materialize-css": "^1.0.0",
 		"periodic-table": "^0.0.8",
 		"pug": "^2.0.3"
 	}
