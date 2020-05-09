@@ -73,7 +73,7 @@
 		"compression": "^1.7.3",
 		"dotenv": "^6.0.0",
 		"express": "^4.16.3",
-		"helmet": "^3.13.0",
+		"helmet": "^3.22.0",
 		"materialize-css": "^1.0.0-rc.2",
 		"periodic-table": "^0.0.8",
 		"pug": "^2.0.3"
