@@ -76,6 +76,6 @@
 		"helmet": "^3.13.0",
 		"materialize-css": "^1.0.0-rc.2",
 		"periodic-table": "^0.0.8",
-		"pug": "^2.0.3"
+		"pug": "^3.0.1"
 	}
 }
